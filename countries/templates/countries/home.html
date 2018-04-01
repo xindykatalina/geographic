@@ -9,4 +9,8 @@ Home
 	{% for country in countries %}
 		{% include 'countries/country.html' %}
 	{% endfor %}
+<p><a href="{% url "tags" %}">Ir a Tags</a></p>
+<p><a href="{% url "continents:home" %}">Ir a Continents</a></p>
+<p><a href="{% url "country_id_detail" id=1%}">Ir a Country con id 1</a></p>
+
 {% endblock %}
